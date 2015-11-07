@@ -5,12 +5,12 @@ module.exports = function gameOfThrees(n){
 			n = n/3;
 		}
 		else if((n+1)%3===0){
+			n = (n+1)/3;
 			console.log(`${n} 1`);
-			n++;
 		}
 		else {
+			n = (n-1)/3;
 			console.log(`${n} - 1`);
-			n--;
 		}
 	}
 
